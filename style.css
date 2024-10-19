@@ -136,6 +136,6 @@ body {
 }
 
 .container {
-    max-height: 30vh; /* Atur tinggi maksimum kontainer slide */
+    max-height: 60vh; /* Atur tinggi maksimum kontainer slide */
     overflow-y: auto; /* Tambahkan scroll vertikal jika konten terlalu panjang */
 }
