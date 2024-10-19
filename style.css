@@ -17,35 +17,26 @@ body {
 .container {
     position: relative;
     text-align: center;
-    width: 90%; /* Mengurangi lebar untuk memberi ruang */
-    max-width: 800px; /* Membatasi lebar maksimum */
-    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
-    padding: 20px; /* Menambahkan padding */
-    border-radius: 15px; /* Membuat sudut membulat */
+    width: 90%; 
+    max-width: 800px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
 }
 
-/* Menata gambar bulat */
+/* Mengatur tampilan gambar di index.html */
 .rounded-image img {
-    width: 200px; /* Pastikan lebar dan tinggi sama */
-    height: 200px; /* Pastikan lebar dan tinggi sama */
+    width: 200px; /* Ukuran lebar gambar */
+    height: 200px; /* Ukuran tinggi gambar */
     border-radius: 50%; /* Membuat gambar bulat */
-    object-fit: cover; /* Memastikan gambar terpotong dengan baik jika tidak proporsional */
-}
-
-/* Menata teks judul */
-h1 {
-    font-size: 2.5em; /* Ukuran font yang lebih besar */
-    color: #333; /* Warna teks yang lebih gelap untuk kontras */
-}
-
-/* Menata teks paragraf */
-p {
-    font-size: 1.2em; /* Ukuran font yang lebih besar untuk keterbacaan */
-    color: #555; /* Warna teks yang lebih lembut */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
 }
 
 /* Tombol dengan efek hover */
 .button {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
     padding: 10px 20px;
     font-size: 1.5em;
     color: #fff;
@@ -57,32 +48,31 @@ p {
 
 .button:hover {
     background: #c29d7e;
-    transform: scale(1.05);
 }
 
 /* Mengatur tampilan kontainer animasi */
 .container-animation {
     animation: fadeIn 1s ease-in-out;
-    padding: 20px; /* Padding untuk kontainer */
-    border-radius: 15px; /* Sudut membulat */
-    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+    padding: 20px; 
+    border-radius: 15px; 
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Mengatur tampilan gambar galeri */
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Pusatkan gambar */
-    gap: 10px; /* Jarak antar gambar */
+    justify-content: center; 
+    gap: 10px; 
 }
 
 /* Menata gambar bulat di galeri */
 .gallery-image {
-    width: 200px; /* Lebar gambar */
-    height: 200px; /* Tinggi gambar */
-    border-radius: 50%; /* Membuat gambar bulat */
-    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
-    animation: fadeIn 0.5s ease forwards; /* Animasi masuk untuk setiap gambar */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    animation: fadeIn 0.5s ease forwards; 
 }
 
 /* Animasi fade in untuk gambar */
@@ -111,3 +101,35 @@ p {
 .prev:hover, .next:hover {
     background-color: #c29d7e;
 }
+
+.custom-button {
+    font-family: 'Rockybilly';/* Ganti dengan font yang diinginkan */
+    font-weight: bold; /* Jika ingin tebal */
+    font-size: 1.2em; /* Ukuran font */
+}
+
+.text1 {
+    text-align: center; /* Untuk memusatkan teks */
+    font-size: 2em; /* Ukuran font dua kali lipat */
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak */
+}
+
+.text2 {
+    text-align: center; /* Untuk memusatkan teks */
+    font-size: 2em; /* Ukuran font dua kali lipat */
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak */
+}
+
+.text3 {
+    text-align: center; /* Untuk memusatkan teks */
+    font-size: 2em; /* Ukuran font dua kali lipat */
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak */
+}
+
+.rockybilly-text {
+    font-family: 'Rockybilly', cursive; /* Menggunakan font Rockybilly */
+}
+
+.slide {
+    max-height: 80vh; /* Atur tinggi maksimum kontainer slide */
+    overflow-y: auto; /* Tambahkan scroll vertikal jika konten terlalu panjang */
